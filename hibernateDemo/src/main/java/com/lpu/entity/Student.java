@@ -23,7 +23,7 @@ public class Student {
         this.age = age;
     }
 
-    // ✅ GETTERS
+
     public int getId() {
         return id;
     }
@@ -36,7 +36,7 @@ public class Student {
         return age;
     }
 
-    // ✅ SETTERS (VERY IMPORTANT FOR UPDATE)
+   
     public void setName(String name) {
         this.name = name;
     }
@@ -45,7 +45,7 @@ public class Student {
         this.age = age;
     }
 
-    // ✅ toString (for printing)
+
     @Override
     public String toString() {
         return id + " " + name + " " + age;
