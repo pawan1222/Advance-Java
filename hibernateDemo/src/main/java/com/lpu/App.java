@@ -75,9 +75,9 @@ import org.hibernate.cfg.Configuration;
 import com.lpu.entity.Student;
 
 public class App {
-	 static SessionFactory factory;   // ⭐ GLOBAL
+	 static SessionFactory factory;   
     
-    // ---------- CREATE ----------
+ 
     public static void createStudent(String name, int age) {
 
         Session session = factory.openSession();
@@ -98,7 +98,6 @@ public class App {
     }
 
 
-    // ---------- READ ----------
     public static void getStudent(int id) {
 
         Session session = factory.openSession();
@@ -118,7 +117,6 @@ public class App {
     }
 
 
-    // ---------- UPDATE ----------
     public static void updateStudent(int id, String newName, int newAge) {
 
         Session session = factory.openSession();
@@ -147,7 +145,7 @@ public class App {
     }
 
 
-    // ---------- DELETE ----------
+
     public static void deleteStudent(int id) {
 
         Session session = factory.openSession();
@@ -173,7 +171,7 @@ public class App {
     }
 
 
-    // ---------- MAIN ----------
+   
     public static void main(String[] args) {
     	factory = new Configuration().configure("hibernate.cgf.xml").buildSessionFactory();
     	
@@ -189,7 +187,7 @@ public class App {
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
-            sc.nextLine();  // clear buffer
+            sc.nextLine();  
 
             switch (choice) {
 
