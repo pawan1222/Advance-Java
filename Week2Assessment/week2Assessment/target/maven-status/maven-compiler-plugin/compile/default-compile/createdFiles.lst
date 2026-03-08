@@ -1,0 +1,5 @@
+com\lpu\Entity\IDCard.class
+com\lpu\Entity\Student.class
+com\lpu\MainApp\mainApp.class
+com\lpu\Entity\Course.class
+com\lpu\Entity\Department.class
